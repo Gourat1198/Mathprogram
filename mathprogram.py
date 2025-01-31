@@ -101,7 +101,7 @@ if operation=="complex-multiplication":
    except ValueError:
       print("please enter a valid number: ".title())  
    exit()
-if operation=="complex-polar-form":
+if operation=="complex-polar":
    try:
       real_part=int(input("enter the real part of the complex number: ".title()))
       img_part=int(input("enter the imginary part of the complex number: ".title()))
@@ -111,7 +111,7 @@ if operation=="complex-polar-form":
       print("enter a valid number".title())
    mod_=((real_part)**2 + (img_part)**2)**0.5
    arg=math.atan(img_part/real_part) 
-   print(f"{mod_}(cos {arg}pi + jsin {arg}pi)")
+   print(f"{mod_}(cos {arg} + jsin {arg})")
    exit()
         
 #matrix program 
