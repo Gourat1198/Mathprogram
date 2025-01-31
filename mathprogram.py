@@ -113,7 +113,42 @@ if operation=="complex-polar":
    arg=math.atan(img_part/real_part) 
    print(f"{mod_}(cos {arg} + jsin {arg})")
    exit()
-        
+#trigonometry function
+if operation=="function-trig":
+    try:
+        tri_operation=str(input("enter the trigionmetry function you wish to perform: ".title()))
+    except ValueError:
+        print("enter valid trig function")
+    if tri_operation in ["sine","cosine","tangent","sectant","cotangent","cosectant"]:
+        print("loading.....")
+    else:
+        print("enter a correct tri function".title())
+    if tri_operation=="sine":
+        angle=float(input('enter angle in degree: '))
+        angle_radian=(angle*(math.pi/180))
+        print(math.sin(angle_radian))
+    if tri_operation=="cosine":
+        angle=float(input('enter angle in degree: '))
+        angle_radian=(angle*(math.pi/180))
+        print(math.cos(angle_radian))
+    if tri_operation=="tangent":
+        angle=float(input('enter angle in degree: '))
+        angle_radian=(angle*(math.pi/180))
+        print(math.tan(angle_radian))
+    if tri_operation=="sectant":
+        angle=float(input('enter angle in degree: '))
+        angle_radian=(angle*(math.pi/180))
+        print(1/(math.cos(angle_radian)))
+    if tri_operation=="cotangent":
+        angle=float(input('enter angle in degree: '))
+        angle_radian=(angle*(math.pi/180))
+        print(1/(math.tan(angle_radian)))
+    if tri_operation=="cosectant":
+        angle=float(input('enter angle in degree: '))
+        angle_radian=(angle*(math.pi/180))
+        print(1/(math.sin(angle_radian)))
+    exit()
+
 #matrix program 
 if operation=="matrix":   
     matrix_order=str(input("enter order: "))  
