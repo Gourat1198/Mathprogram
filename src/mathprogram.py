@@ -166,7 +166,7 @@ if operation=="matrix":
        print("enter a square matrix or a matrix that does not exceed the limit of order of 3x3")
 
 #Arithemic sequence operation                       
-if operation=="sequence":    
+if operation=="sequence-arithemtic":    
     first_term=int(input('enter the first term of the sequence: '.title()))
     d=int(input("enter common difference: ".title()))
     try:                            
@@ -177,6 +177,20 @@ if operation=="sequence":
         term=first_term+(n-1)*d
         print(f"{n} term:",term)
         n+=1      
+
+#geometric sequence
+if operation=="sequence-geometric":
+   try:
+      first_term_geo=int(input("enter the first term of the sequence: ".title()))
+      common_ratio=int(input("enter the common ratio of the sequence: ".title()))
+   except ValueError:
+      print("enter a valid number".title())
+   number_geo=int(input("enter the final sequential order: "))
+   n=1
+   while n<=number_geo:
+      print(f'{n} term: ', first_term_geo*(common_ratio**(n-1)))
+      n+=1
+   exit()
 
 #Boolean Operation                        
 if operation=="boolean":                                                     
