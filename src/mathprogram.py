@@ -185,7 +185,7 @@ if operation=="sequence-geometric":
       common_ratio=int(input("enter the common ratio of the sequence: ".title()))
    except ValueError:
       print("enter a valid number".title())
-   number_geo=int(input("enter the final sequential order: "))
+   number_geo=int(input("enter the final sequential order: ".title()))
    n=1
    while n<=number_geo:
       print(f'{n} term: ', first_term_geo*(common_ratio**(n-1)))
@@ -229,12 +229,18 @@ if operation=="count":
 
 #program for simple arithmetic operations
 if operation=="addition":
- try:
-    num1=int(input("enter first number of operation: "))
-    num2=int(input("enter first number of operation: "))
-    print(num1+num2)
- except ValueError:
-    print("please enter a valid number")
+ summation=int(input('how many numbers do you wish to add: '))
+ if summation>5:
+    print('.........')
+    print('error: numbers should not exceed five'.title())
+    exit()
+ if summation==2:
+    try:
+       num1=int(input("enter first number of operation: "))
+       num2=int(input("enter first number of operation: "))
+       print(num1+num2)
+    except ValueError:
+       print("please enter a valid number")
  exit()
 if operation=="subtraction":
  try:
