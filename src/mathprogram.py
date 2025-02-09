@@ -157,19 +157,23 @@ if operation=='vector-sum':
     except ValueError:
         print("enter a valid dimension")
     if dimension==2:
-        i_vector_1=int(input('enter the horizontal componenet of the first vector: '.title()))
-        j_vector_1=int(input('enter the vertical componenet of the first vector: '.title()))
-        i_vector_2=int(input('enter the horizontal componenet of the second vector: '.title()))
-        j_vector_2=int(input('enter the vertical componenet of the second vector: '.title()))
+        i_vector_1=int(input('enter the horizontal component of the first vector: '.title()))
+        j_vector_1=int(input('enter the vertical component of the first vector: '.title()))
+        i_vector_2=int(input('enter the horizontal component of the second vector: '.title()))
+        j_vector_2=int(input('enter the vertical component of the second vector: '.title()))
         print(f'{i_vector_1+i_vector_2}i + {j_vector_1+j_vector_2}j')
     elif dimension==3:
-        i_vector=int(input('enter the horuizontal componenet: '.title()))
-        i_vector=int(input('enter the horuizontal componenet: '.title()))
-        i_vector=int(input('enter the horuizontal componenet: '.title()))
+        i_vector=int(input('enter the horizontal component of the first vector: '.title()))
+        j_vector=int(input('enter the vertical component  of the first vector: '.title()))
+        k_vector=int(input('enter the z component  of the first vector: '.title()))
+        i_vector=int(input('enter the horizontal component  of the second vector: '.title()))
+        j_vector=int(input('enter the vertical component  of the second vector: '.title()))
+        k_vector=int(input('enter the z component  of the second vector: '.title()))
+        print(f"{i_vector+i_vector}i + {j_vector+j_vector}j + {k_vector+k_vector}k")
     else:
         print("please enter 2 or 3 for dimension")
     
-
+    exit()
 #matrix program 
 if operation=="matrix":   
     matrix_order=str(input("enter order: "))  
