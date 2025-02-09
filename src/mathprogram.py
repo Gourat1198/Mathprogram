@@ -150,6 +150,26 @@ if operation=="function-trig":
         print(1/(math.sin(angle_radian)))
     exit()
 
+#FIXME:testing the coded vector sum
+if operation=='vector-sum':
+    try:
+        dimension=int(input("what is the vector dimension: "))
+    except ValueError:
+        print("enter a valid dimension")
+    if dimension==2:
+        i_vector_1=int(input('enter the horizontal componenet of the first vector: '.title()))
+        j_vector_1=int(input('enter the vertical componenet of the first vector: '.title()))
+        i_vector_2=int(input('enter the horizontal componenet of the second vector: '.title()))
+        j_vector_2=int(input('enter the vertical componenet of the second vector: '.title()))
+        print(f'{i_vector_1+i_vector_2}i + {j_vector_1+j_vector_2}j')
+    elif dimension==3:
+        i_vector=int(input('enter the horuizontal componenet: '.title()))
+        i_vector=int(input('enter the horuizontal componenet: '.title()))
+        i_vector=int(input('enter the horuizontal componenet: '.title()))
+    else:
+        print("please enter 2 or 3 for dimension")
+    
+
 #matrix program 
 if operation=="matrix":   
     matrix_order=str(input("enter order: "))  
