@@ -199,6 +199,12 @@ if operation=="set":
       set_2=set(input("enter the elements of the second set, seperated by commas: ".split(",")))
       answer_set = set_1.union(set_2)
       print(answer_set)
+   if set_operation == "interset":
+      set_1=set(input("enter the elements of the first set, seperated by commas: "))
+      set_2=set(input("enter the elements of the second set, seperated by commas: "))
+      answer_set = set_1.intersection(set_2)
+      print(answer_set)
+   exit()
       
 #Arithemic sequence operation                       
 if operation=="sequence-arithemtic":    
