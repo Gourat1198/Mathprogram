@@ -155,7 +155,7 @@ if operation=='vector-sum':
     try:
         dimension=int(input("what is the vector dimension: "))
     except ValueError:
-        print("enter a valid dimension")
+        print("enter a valid dimension")  
     if dimension==2:
         i_vector_1=int(input('enter the horizontal component of the first vector: '.title()))
         j_vector_1=int(input('enter the vertical component of the first vector: '.title()))
@@ -189,7 +189,17 @@ if operation=="matrix":
                 print((num1_1*num2_2)-(num1_2*num2_1))
     else:
        print("enter a square matrix or a matrix that does not exceed the limit of order of 3x3")
+    exit()
 
+#TODO: program for set operation
+if operation=="set":
+   set_operation = input('enter the set operation you wish to perform: '.title())
+   if set_operation == "union":
+      set_1=set(input("enter the elements of the first set, seperated by commas: ".split(",")))
+      set_2=set(input("enter the elements of the second set, seperated by commas: ".split(",")))
+      answer_set = set_1.union(set_2)
+      print(answer_set)
+      
 #Arithemic sequence operation                       
 if operation=="sequence-arithemtic":    
     first_term=int(input('enter the first term of the sequence: '.title()))
