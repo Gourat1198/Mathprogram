@@ -34,7 +34,7 @@ python --version
 
 #### Navigate to the project directory in your terminal
 
-use the cd command to change the directory to  /src
+use the cd command to change the directory to  ./src
 
 #### Run the program using the following command
 
