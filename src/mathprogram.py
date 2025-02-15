@@ -187,6 +187,16 @@ if operation=="matrix":
                 num2_1=int(input("enter value for row2,column1: "))
                 num2_2=int(input("enter value for row2,column2: "))
                 print((num1_1*num2_2)-(num1_2*num2_1))
+            elif matrix_operation_order=="3x3":
+                num1_1=int(input("enter value for row1,column1: "))
+                num1_2=int(input("enter value for row1,column2: "))
+                num1_3=int(input("enter value for row1,column3: "))
+                num2_1=int(input("enter value for row2,column1: "))
+                num2_2=int(input("enter value for row2,column2: "))
+                num2_3=int(input("enter value for row2,column3: "))
+                num3_1=int(input("enter value for row3,column1: "))
+                num3_2=int(input("enter value for row3,column2: "))
+                num3_3=int(input("enter value for row3,column3: "))
     else:
        print("enter a square matrix or a matrix that does not exceed the limit of order of 3x3")
     exit()
