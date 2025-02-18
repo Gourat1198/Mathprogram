@@ -197,6 +197,8 @@ if operation=="matrix":
                 num3_1=int(input("enter value for row3,column1: "))
                 num3_2=int(input("enter value for row3,column2: "))
                 num3_3=int(input("enter value for row3,column3: "))
+                print((num1_1*((num2_2*num3_3)-(num2_3*num3_2)))-(num1_2*((num2_1*num3_3)-(num2_3*num3_1)))+(num1_3*((num2_1*num3_2)-(num2_2*num3_1))))
+    
     else:
        print("enter a square matrix or a matrix that does not exceed the limit of order of 3x3")
     exit()
